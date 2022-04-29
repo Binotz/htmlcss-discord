@@ -72,7 +72,7 @@ ul.flex-container{
 .column{
     /* TEST */
     /* height: 500px; */
-    padding: 1px;
+    width: 100%;
 }
 
 .container.flex-container{
@@ -121,6 +121,7 @@ ul.flex-container{
 
 .col-single-image>.col-text{
     width: 90%;
+    margin: auto;
 }
 
 /* Footer */
@@ -136,21 +137,28 @@ footer>.container.flex-container.second-footer{
 
 .left-column{
     width: calc(100% * (1 / 3) );
+    padding-top: 60px;
     /* TEST */
-    background-color: #f08080;
-    border: 2px dotted black;
+    /* background-color: #f08080;
+    border: 2px dotted black; */
 }
 .right-column{
     width: calc(100% * (2 / 3) );
+    padding-top: 50px;
     /* TEST */
-    background-color: #20b2aa;
-    border: 2px dotted black;
+    /* background-color: #20b2aa; */
+    /* border: 2px dotted black; */
+}
+
+.right-column li{
+    padding: 15px;
+    color: white;
 }
 
 .right-column>div{
     width: calc(100% / 4);
     /* TEST */
-    border: 1px dotted white;
+    /* border: 1px dotted white; */
 }
 
 .right-column.flex-container{
@@ -159,8 +167,8 @@ footer>.container.flex-container.second-footer{
 
 .second-footer{
     /* TEST */
-    background-color: aquamarine;
-    height: 30px;
+    /* background-color: aquamarine;*/
+    height: 30px; 
 
 }
 
@@ -174,19 +182,61 @@ footer>.container.flex-container.second-footer{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
     /* TEST */
     height: 100%;
+}
+
+.col-first-right .title-list-footer{
+    color: #7289da;
+}
+
+.col-second-right .title-list-footer{
+    color: #7289da;
+}
+
+.col-third-right .title-list-footer{
+    color: #7289da;
+}
+
+.col-fourth-right .title-list-footer{
+    color: #7289da;
 }
 
 span{
     padding: 5px;
     /* TEST */
-    background-color: pink;
-    border: 1px dotted black;
+    /* background-color: pink;
+    border: 1px dotted black; */
 }
 
 .discord-button a{
     font-size: 20px;
+}
+
+.discord-button > *{
+    margin-left: 20px;
+}
+
+#flag{
+    width: 30px;
+}
+
+.drop-language.flex-container{
+    color: white;
+    align-items: center;
+    padding: 5px 5px 5px 0px;
+}
+
+.icon i{
+    padding: 10px 20px 20px 0px;
+    color: white;
+}
+
+.footer-title{
+    color: #7289da;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 /* Common */
@@ -262,4 +312,8 @@ section:nth-child(even){
 
 footer{
     background-color: #23272a;
+}
+
+hr{
+    border-color: #7289da;
 }
